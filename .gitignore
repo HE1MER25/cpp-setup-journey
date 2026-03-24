@@ -1,41 +1,33 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
+# --- C++ Executables and Objects ---
 *.exe
 *.out
 *.app
+*.o
+*.obj
 
-# debug information files
-*.dwo
+# --- Visual Studio Code Settings ---
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+# We keep tasks and launch so others can see your build/debug setup
+# but we ignore the internal state
+.vscode/ipch/
+.vscode/browse.vc.db
+.vscode/project.xcworkspace
+
+# --- MSYS2 / Compiler Temp Files ---
+*.gch
+*.pdb
+*.ilk
+*.suo
+
+# --- OS Generated Files ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# --- Build Directories ---
+build/
+bin/
+debug/
+release/
